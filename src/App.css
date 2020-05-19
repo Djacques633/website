@@ -20,13 +20,24 @@ header {
   background-color: #012506;
   color: white;
 }
+
+banner {
+  height: 100%;
+  width: 100%;
+}
+#img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 body {
   margin: 110px;
   position: relative;
   color: gray;
   font-size: 20px;
   display: flex;
-  background-color: #343536;
+  background-color: rgb(67,65,67);
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
