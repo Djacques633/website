@@ -6,7 +6,7 @@ import Pdf from "../Daniel Jacques Resume.pdf";
 // import image from "./lp_image.jpg"
 import { BrowserRouter as Router,Route, Switch,Link,Redirect } from "react-router-dom";
 
-export function Body() {
+export const MainPage = () => {
   return (<>
       <header className="header">
         <h1>D
@@ -57,3 +57,4 @@ export function Body() {
 
 }
 
+export default MainPage;
