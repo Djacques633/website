@@ -6,14 +6,17 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router,Route, Switch,Link,Redirect } from "react-router-dom";
 
 // Pages
-import MainPage from "./pages/index"
+import MainPage from "./pages";
 import NotFoundPage from "./pages/404.jsx";
+import ProjectPage from "./pages/projects";
 class App extends Component {
   render() {
     return <Router>
       <Switch>
-      <Route exact path = "/" component = { MainPage }></Route>
-      <Route component={NotFoundPage}></Route>
+        <Route exact path = "/" component = { MainPage }></Route>
+        <Route exact path = "/projects/" component = {ProjectPage}></Route>
+        <Route exact path = "/404" component={NotFoundPage}></Route>
+        <Redirect to = "/404"></Redirect>
       </Switch>
     </Router>
   }
