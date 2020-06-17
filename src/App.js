@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router,Route, Switch,Link,Redirect } from "react-router-dom";
 
 // Pages
-import MainPage from "./pages";
+import MainPage from "./pages/index.jsx";
 import NotFoundPage from "./pages/404.jsx";
 import ProjectPage from "./pages/projects";
 class App extends Component {

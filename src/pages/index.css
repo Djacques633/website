@@ -1,0 +1,12 @@
+img.pic {
+    float: right;
+    height: 10%;
+    width: 20%;
+}
+
+h3 {
+    color: #BBE1FA;
+}
+h3.overview {
+    text-align: center;
+}

@@ -1,53 +1,37 @@
 import React, { Component } from "react";
-import Pdf from "../Daniel Jacques Resume.pdf"
+import Pdf from "../resources/Daniel Jacques Resume.pdf";
+import "./header.css";
+
 class Header extends Component {
-    render() {
-        return (<header className="header">
-
-            <h1>
-                <a
-                className="App-link"
-                href="/"
-                target="_blank"
-            >
-                D
-          <span>aniel </span>
-          J
-          <span>acques </span>
-
-            </a>
+  render() {
+    return (
+      <header className="header">
+        <h1>
+          <a className="App-link" href="/" >
+            Daniel Jacques 
+          </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a
-                    className="App-link"
-                    href="./projects"
-                    target="_blank"
-                    rel="noopener noreferrer"
-
-                >
-                    Projects
-        </a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a
-                    className="App-link"
-                    href={Pdf}
-                    target="_blank"
-                >
-                    Resume
-        </a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a
-                    className="App-link"
-                    href={Pdf}
-                    target="_blank"
-
-                >
-                    Contact me!
-        </a>
-            </h1>
-
-        </header>
-        );
-    }
+          <a
+            className="App-link"
+            href="./projects"
+          >
+            Projects
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a className="App-link"
+             href={Pdf}
+             target = "_blank" 
+             rel = "noopener noreferrer">
+            Resume
+          </a> 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a className="App-link" href={Pdf}>
+            Contact me
+          </a>
+        </h1>
+      </header>
+    );
+  }
 }
 
 export default Header;

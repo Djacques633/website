@@ -6,20 +6,6 @@
   height: 40vmin;
   pointer-events: none;
 }
-header {
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 110px;
-  position: fixed;
-  width: 100%;
-  margin:0px;
-  padding:10px 70px 10px 70px;
-  display: flex;
-  background:transparent;
-  background-color: #012506;
-  color: white;
-}
 #banner {
   height: 100%;
   width: 100%;
@@ -31,16 +17,16 @@ header {
 }
 #about {
   top: 110;
-  color: gray;
+  color: #0F4C75;
   font-size: 32px;
-  background-color: rgb(67,65,67);
+  background-color: #0F4C75;
 }
 body {
   margin: 110px;
-  color: gray;
+  color: #0F4C75;
   font-size: 20px;
   display: flex;
-  background-color: rgb(67,65,67);
+  background-color: #0F4C75;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
