@@ -1,8 +1,9 @@
 import React from "react";
 import Header from "../components/header";
+import Footer from "../components/footer";
 import Particles from "react-particles-js";
 import config from "./index.json";
-import './index.css';
+import s from './index.css';
 import image from "../resources/portfoliopic.jpg";
 import {
   BrowserRouter as Router,
@@ -11,6 +12,19 @@ import {
   Link,
   Redirect,
 } from "react-router-dom";
+
+const TECHNOLOGIES = [
+  `HTML`,
+  `CSS`,
+  `React`,
+  `NodeJS/Typescript`,
+  `AWS`,
+  `Kubernetes`,
+  `C`,
+  `Python`,
+  `Github`,
+  `Microcontrollers`
+]
 
 export const MainPage = () => {
   return (
@@ -51,6 +65,19 @@ export const MainPage = () => {
       <h1>
         Technologies & Tools
       </h1>
+      <div class="technologies">
+        {TECHNOLOGIES.map((technology, i) =>
+            <div
+                key={i}
+                class="technology"
+            >
+                <div>
+                    <div class={s.language}>{technology}</div>
+                </div>
+            </div>
+        )}
+      </div>
+      <Footer></Footer>
     </>
   );
 };

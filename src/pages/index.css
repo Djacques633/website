@@ -10,3 +10,31 @@ h3 {
 h3.overview {
     text-align: center;
 }
+
+.technologies {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.technology {
+    width: 16.666%;
+    height: 16.666vw;
+    color: white;
+    background-color: #0F4C75;
+    border: solid white 1px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(40px);
+}
+
+.language {
+    font-size: 26px;
+    font-family: Monospaced, monospace;
+    text-align: center;
+    color: #ddd;
+}
