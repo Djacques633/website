@@ -1,13 +1,28 @@
-header {
+ul {
+  list-style-type: none;
   left: 0;
   right: 0;
   top: 0;
-  height: 110px;
   position: fixed;
-  width: 100%;
-  margin:0px;
-  padding:10px 70px 10px 70px;
-  display: flex;
-  background:transparent;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   background-color: #1B262C;
+
+}
+
+li {
+  float: left;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }

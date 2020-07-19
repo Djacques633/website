@@ -5,30 +5,34 @@ import "./header.css";
 class Header extends Component {
   render() {
     return (
-      <header className="header">
-        <h1>
-          <a className="App-link" href="/" >
+      <header>
+        <ul>
+          <li><a className="App-link" href="/" >
             Daniel Jacques 
           </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </li>
+          <li>
           <a
             className="App-link"
             href="./projects"
           >
             Projects
           </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </li>
+          <li>
           <a className="App-link"
              href={Pdf}
              target = "_blank" 
              rel = "noopener noreferrer">
             Resume
           </a> 
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </li>
+          <li>
           <a className="App-link" href={Pdf}>
             Contact me
           </a>
-        </h1>
+          </li>
+        </ul>
       </header>
     );
   }
