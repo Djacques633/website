@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/header";
+import Header from "../components/Header/header";
 import './project.css'
 
 class Projects extends React.Component {
@@ -12,7 +12,7 @@ class Projects extends React.Component {
   render() {
     return (
       <>
-        <Header></Header>
+        <Header />
         <h1>
           Overview
         </h1>

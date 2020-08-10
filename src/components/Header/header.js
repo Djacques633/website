@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Pdf from "../resources/Daniel Jacques Resume.pdf";
+import Pdf from "../../resources/Daniel Jacques Resume.pdf";
 import "./header.css";
 
 class Header extends Component {
   render() {
     return (
-      <header>
+      <header className="HeaderContainer">
         <ul>
           <li><a className="App-link" href="/" >
             Daniel Jacques 

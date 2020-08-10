@@ -3,9 +3,7 @@
     "background": {
       "color": {
         "value": "#rgb(67,65,67)"
-      },
-      "width": "document.documentElement.clientWidth",
-      "height": "window.innerHeight"
+      }
     },
     "backgroundMask": {
       "cover": {

@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../components/header";
-import Footer from "../components/footer";
-import Particles from "react-particles-js";
-import config from "./index.json";
+import Header from "../components/Header/header";
+import Footer from "../components/Footer/footer";
+// import Particles from "react-particles-js";
+import ParticlesCom from "../components/Particles/Particles";
 import s from './index.css';
 import image from "../resources/portfoliopic.jpg";
 
@@ -27,9 +27,9 @@ class MainPage extends React.Component {
 
   render() {
     return (
-      <>
-        <Header/>
-        <Particles params = {config} id = "canvas"></Particles>
+      <div>
+        <Header />
+        <ParticlesCom />
         <img class = "pic" src = {image} alt = "Me"></img>
         <h1>
           About me
@@ -78,7 +78,7 @@ class MainPage extends React.Component {
         </div>
         <Footer></Footer>
 
-      </>
+      </div>
     );
   }
 };
