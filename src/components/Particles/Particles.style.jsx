@@ -8,7 +8,7 @@ export const Container = styled.div`
     box-sizing: border-box;
     background-color: #0F4C75;
     display: flex;
-    margin-top: 50px;
+    margin-top: 70px;
 
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ export const Container = styled.div`
 
 export const Canvas = styled(Particles)`
     position: absolute;
-    margin-top: 50px;
+    margin-top: 70px;
     
     top: 0;
     right: 0;
