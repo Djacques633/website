@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header/header";
+import Header from "../components/Header/header.jsx";
 import './project.css'
 
 class Projects extends React.Component {
@@ -22,30 +22,34 @@ class Projects extends React.Component {
         </h3>
         <h1>Projects</h1>
         <h3>
-          Games by the Minute (Work in Progress)
+          Games by the Minute (Current)
         </h3>
         <p>
-          This project aims to create an easy access and affordable hosting experience for anyone to play their favorite games. 
-          We are using AWS Lambda functions in tandem with API Gateway to host our backend API server that will be accessed by a 
-          combination of a React website hosted on an AWS S3 bucket and a Discord bot. The game servers will be hosted on Fargate using ECS, 
-          and will have an automatic timer to ensure that they aren't left active without players to acrew costs. This will allow the customer to 
-          save money by only being charged for the playtime they use. We want to keep costs growing with our user base, so we want to integrate 
-          as many serverless functionality as we can. As described before, the game servers themselves will be on Fargate with ECS, along with 
-          AWS lambda as the backing for the API. The data about our users will be stored in DynamoDB in "on-demand" mode until we begin to grow, and 
-          will switch it to “provisioned”.
-          <br/><br/>
-          We currently have 4 people working on this project and all of us are current students at 
-          Ohio University. This project is something we built a first prototype for during a hackathon 
-          (Revolution UC - https://devpost.com/software/minecraft-discord-bot) and ended up winning second place overall. 
-          For this prototype we used Google Cloud as it was encouraged at the hackathon due to them being a sponsor. 
-          We knew that in the long run, AWS is what we wanted to use because we are all familiar with it.
-        <h6>
-          Technologies used: AWS Codebuild, Route 56, Lambda, Gateway, S3, Fargate, ECS, DynamoDB
-        </h6>
-          </p>
-        <p>
-          Based on a prototype created in a hackathon at the University of Cincinnatti. TBC
+          Branching from a second place (out of 50!!) hackathon win, this is a startup in which I have 1/3 ownership overall. I believe
+          that we were close to first, but alas, we were beat by a VCR that was turned into a toaster. I can't say that I'm mad.
         </p>
+        <ul>
+          <li>
+            Create a GraphQL API for our services on an Apollo server
+          </li>
+          <li>
+            Set up an AWS Code Pipeline to continuously deploy our most up-to-date applications from GitHub into an AWS ECS cluster
+          </li>
+          <li>
+            Founded and incorporated a company, as well as design the business model
+          </li>
+          <li>
+            Built a component library to use throughout our website
+          </li>
+        </ul>
+        <h6>
+          Technologies used: Kubernetes, Google BigQuery, Google Cloud Sql, Typescript, Java, Discord API, GraphQL, GitHub, 
+          AWS (CodePipeline, CodeBuild, CodeDeploy, EKR, ECS, API Gateway, Route 53, Fargate), React, Apollo, GitHub Actions,
+          Storybook, Styled-components
+        </h6>
+        <h3>
+          Ohio University Course Offerings Page (July - August 2020)
+        </h3>
         <h3>
           <a href="/" target="_blank">
             Personal Website
@@ -53,7 +57,7 @@ class Projects extends React.Component {
           (May 2020)
         </h3>
         <p>
-          What better project to pick up during global quarantine than a personal
+          What better project to pick up during global pandemic than a personal
           website/portfolio?
           <h6>Technologies used: HTML, React, CSS, AWS</h6>
         </p>
@@ -86,8 +90,7 @@ class Projects extends React.Component {
           </h6>
         </p>
         <h3>
-          Ohio University Upperclass Scholarship Application (January 2020 - May
-          2020)
+          Ohio University Upperclass Scholarship Application (January 2020 - August 2020)
         </h3>
         <p>
           The Upperclass scholarship was an assignment given to a group of three

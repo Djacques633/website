@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Pdf from "../../resources/Daniel Jacques Resume.pdf";
 import { HeaderContainer, Link } from "./header.style";
-import "./header.css";
 
 class Header extends Component {
   options = [{

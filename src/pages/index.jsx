@@ -1,23 +1,11 @@
 import React from "react";
-import Header from "../components/Header/header";
+import Header from "../components/Header/header.jsx";
 import Footer from "../components/Footer/footer";
 // import Particles from "react-particles-js";
+import "./index.css";
 import ParticlesCom from "../components/Particles/Particles";
-import s from './index.css';
 import image from "../resources/portfoliopic.jpg";
-
-const TECHNOLOGIES = [
-  `HTML`,
-  `CSS`,
-  `React`,
-  `NodeJS/Typescript`,
-  `AWS`,
-  `Kubernetes`,
-  `C`,
-  `Python`,
-  `Github`,
-  `Microcontrollers`
-]
+import { TechnologyBoxes } from "../components/Technologies/Technologies";
 
 class MainPage extends React.Component {
   constructor() {
@@ -64,18 +52,7 @@ class MainPage extends React.Component {
         <h1>
           Technologies & Tools
         </h1>
-        <div class="technologies">
-          {TECHNOLOGIES.map((technology, i) =>
-              <div
-                  key={i}
-                  class="technology"
-              >
-                  <div>
-                      <div class={s.language}>{technology}</div>
-                  </div>
-              </div>
-          )}
-        </div>
+        <TechnologyBoxes />
         <Footer></Footer>
 
       </div>
