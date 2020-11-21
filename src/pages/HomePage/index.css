@@ -10,3 +10,12 @@ h3 {
 h3.overview {
     text-align: center;
 }
+
+.page {
+    margin: 50px;
+}
+
+.Quotes {
+    text-align: left;
+    margin-top: 75px;
+}

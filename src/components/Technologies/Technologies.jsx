@@ -13,10 +13,9 @@ const TECHNOLOGIES = [
     `C`,
     `Python`,
     `Github`,
-    `Microcontrollers`
   ]
 
-export class TechnologyBoxes extends Component{
+export default class TechnologyBoxes extends Component{
     render() {
         return (
             <Technologies>

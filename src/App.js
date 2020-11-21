@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Body } from './pages';
+// import { Body } from './pages';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router,Route, Switch,Link,Redirect } from "react-router-dom";
 
 // Pages
-import MainPage from "./pages/index.jsx";
+import MainPage from "./pages/HomePage/index.jsx";
 import NotFoundPage from "./pages/404.jsx";
-import ProjectPage from "./pages/projects";
+import ProjectPage from "./pages/ProjectPage/ProjectPage.jsx";
 class App extends Component {
   render() {
     return <Router>

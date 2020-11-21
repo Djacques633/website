@@ -14,7 +14,7 @@
       },
       "enable": false
     },
-    "detectRetina": true,
+    "detectRetina": false,
     "fpsLimit": 200,
 
     "particles": {

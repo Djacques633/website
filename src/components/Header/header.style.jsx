@@ -13,6 +13,7 @@ export const HeaderContainer = styled.header`
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    overflow-x: scroll;
 `;
 
 export const Link = styled.a`

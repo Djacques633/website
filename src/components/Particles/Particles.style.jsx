@@ -26,8 +26,7 @@ export const Canvas = styled(Particles)`
 `;
 
 export const Greeting = styled.h1`
-    font-size: 100px;
-    z-index: 1;
+    font-size: 5vw;
     left: 0;
     justify-content: center;
     align-items: center;
@@ -43,8 +42,7 @@ export const Greeting = styled.h1`
 `;
 
 export const Hi = styled.h1`
-    font-size: 100px;
-    z-index: 1;
+    font-size: 5vw;
     left: 0;
     justify-content: center;
     align-items: center;
@@ -59,12 +57,12 @@ export const Hi = styled.h1`
     }
 `;
 export const MyNameIs = styled.h1`
-    font-size: 100px;
-    z-index: 1;
+    font-size: 5vw;
     left: 0;
     justify-content: center;
     align-items: center;
     animation: MyNameIs 1 1s linear;
+    
     @keyframes MyNameIs{
         from {
             transform: translateY(-1000px);

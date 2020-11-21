@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Tech = styled.div`
-    font-size: 26px;
+    font-size: 2.5vw;
     font-family: Monospaced, monospace;
     text-align: center;
     color: #ddd;
