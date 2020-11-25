@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
     margin: 0px;
     padding: 10px;
     background-color: #1B262C;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

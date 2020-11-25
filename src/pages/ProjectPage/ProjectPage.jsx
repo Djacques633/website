@@ -3,7 +3,7 @@ import Header from "../../components/Header/header.jsx";
 import "./ProjectPage.css";
 import Footer from "../../components/Footer/footer";
 import Projects from "../../components/Projects/Projects";
-
+import background from "../../components/photos/textured-background.jpg";
 export default class ProjectPage extends Component {
   constructor() {
     super();

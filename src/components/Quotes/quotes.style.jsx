@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Quote = styled.div`
-font-family: 'playfair display';
+/* font-family: 'playfair display'; */
+font-family: 'Amatic SC', cursive;
 font-size: 42px;
 font-style: normal;
 font-weight: 900;

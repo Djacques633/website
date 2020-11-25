@@ -28,6 +28,7 @@ export const Canvas = styled(Particles)`
 export const Greeting = styled.h1`
     font-size: 5vw;
     left: 0;
+    z-index: 1;
     justify-content: center;
     align-items: center;
     animation: Greeting 1 1s linear;
@@ -44,6 +45,7 @@ export const Greeting = styled.h1`
 export const Hi = styled.h1`
     font-size: 5vw;
     left: 0;
+    z-index: 1;
     justify-content: center;
     align-items: center;
     animation: Hi 1 1s linear;
@@ -59,6 +61,7 @@ export const Hi = styled.h1`
 export const MyNameIs = styled.h1`
     font-size: 5vw;
     left: 0;
+    z-index: 1;
     justify-content: center;
     align-items: center;
     animation: MyNameIs 1 1s linear;

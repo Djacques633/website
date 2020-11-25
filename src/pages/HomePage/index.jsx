@@ -23,11 +23,11 @@ class MainPage extends React.Component {
           <h1>About me</h1>
           <h3>
             <p>
-            My name is Daniel Jacques and I am a graduating Computer Science student at Ohio University  
-            looking to begin my career as an entry level software engineer. 
+              Currently I am finishing my degree in Computer Science at Ohio University 
+              graduating in Spring 2021.
             </p>
             <p>
-              Here, I hope that I can provide a sense for who I am as a student,
+              Here, I hope that I can provide a sense for who I am as a pre-professional,
               as well as a potential employee by highlighting my experience in
               the technology field. Please feel free to contact me with any
               questions.

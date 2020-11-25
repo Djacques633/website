@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import { Details, ProjectTitle, ProjectContainer, Pic } from "./Projects.style";
-import picture from "../photos/UPPSCH.png";
+import UPPSCH from "../photos/UPPSCH.png";
 import ReactCardFlip from "react-card-flip";
-
+import picture2 from '../photos/textured-blue.jpeg';
+import UPPSCH2 from '../photos/UPPSCH2.jpg';
+import CLASS1 from '../photos/CLASS.jpg';
+import CLASS2 from '../photos/CLASS2.jpg';
 export default class Projects extends Component {
   PROJECTS = [
     {
@@ -21,7 +24,7 @@ export default class Projects extends Component {
         "Git/GitHub",
         "Node.JS",
       ],
-      pictureUrl: [picture,`../photos/UPPSCH2.png`],
+      pictureUrl: [UPPSCH, UPPSCH2],
     },
     {
       name: "Ohio University Course Offerings",
@@ -38,7 +41,7 @@ export default class Projects extends Component {
         "Git/GitHub",
         "Node.JS",
       ],
-      pictureUrl: [`../photos/UPPSCH.png`,`../photos/UPPSCH2.png`],
+      pictureUrl: [CLASS1,CLASS2],
 
     },
     {
@@ -78,6 +81,12 @@ export default class Projects extends Component {
     this.setState((prevState) => ({ isFlipped: !prevState.isFlipped }));
   }
 
+  styles = {
+    backgroundImage: "url(" + picture2 + ")",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover"
+  }
+
   render() {
     return this.PROJECTS.map((each, i) => (
       <ReactCardFlip
@@ -88,6 +97,7 @@ export default class Projects extends Component {
           onClick={() => {
             this.handleClick(i);
           }}
+          style={this.styles}
         >
           <ProjectTitle>{each.name}</ProjectTitle>
           <Details>
@@ -99,12 +109,13 @@ export default class Projects extends Component {
         </ProjectContainer>
 
         <ProjectContainer
+          flipped
           onClick={() => {
             this.handleClick(i);
           }}
         >
-          <Pic src={each.pictureUrl[0]} alt="Me"></Pic>
-          <Pic src={each.pictureUrl[1]} alt="Me"></Pic>          
+          <Pic style={{marginRight: 20 + "px"}} src={each.pictureUrl[0]} alt="Work example"></Pic>
+          <Pic src={each.pictureUrl[1]} alt="Work example"></Pic>          
         </ProjectContainer>
       </ReactCardFlip>
     ));
