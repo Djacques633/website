@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
-// import { Body } from './pages';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter as Router,Route, Switch,Link,Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 
 // Pages
 import MainPage from "./pages/HomePage/index.jsx";

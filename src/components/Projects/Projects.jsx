@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import { Details, ProjectTitle, ProjectContainer, Pic } from "./Projects.style";
 import UPPSCH from "../photos/UPPSCH.png";
 import ReactCardFlip from "react-card-flip";
-import picture2 from '../photos/textured-blue.jpeg';
-import UPPSCH2 from '../photos/UPPSCH2.jpg';
-import CLASS1 from '../photos/CLASS.jpg';
-import CLASS2 from '../photos/CLASS2.jpg';
+import picture2 from "../photos/textured-blue.jpeg";
+import UPPSCH2 from "../photos/UPPSCH2.jpg";
+import CLASS1 from "../photos/CLASS.jpg";
+import CLASS2 from "../photos/CLASS2.jpg";
+import GBTM from "../photos/GBTM.jpg";
+import GQL from "../photos/GQL.jpg";
 export default class Projects extends Component {
   PROJECTS = [
     {
@@ -41,8 +43,7 @@ export default class Projects extends Component {
         "Git/GitHub",
         "Node.JS",
       ],
-      pictureUrl: [CLASS1,CLASS2],
-
+      pictureUrl: [CLASS1, CLASS2],
     },
     {
       name: "Kubernetes Server Manager / Games by the Minute, Inc.",
@@ -58,8 +59,7 @@ export default class Projects extends Component {
         "GraphQL",
         "Docker",
       ],
-      pictureUrl: [`../photos/UPPSCH.png`,`../photos/UPPSCH2.png`],
-
+      pictureUrl: [GBTM, GQL],
     },
   ];
 
@@ -84,8 +84,8 @@ export default class Projects extends Component {
   styles = {
     backgroundImage: "url(" + picture2 + ")",
     backgroundRepeat: "no-repeat",
-    backgroundSize: "cover"
-  }
+    backgroundSize: "cover",
+  };
 
   render() {
     return this.PROJECTS.map((each, i) => (
@@ -101,10 +101,8 @@ export default class Projects extends Component {
         >
           <ProjectTitle>{each.name}</ProjectTitle>
           <Details>
-            <div style={{ marginBottom: 20 + "px" }}>
-              Description: {each.description}
-            </div>
-            <div>Technologies: {each.technologiesUsed.join(", ")}</div>
+            <div style={{ marginBottom: 20 + "px" }}>{each.description}</div>
+            <div>Technologies I Used: {each.technologiesUsed.join(", ")}</div>
           </Details>
         </ProjectContainer>
 
@@ -114,8 +112,12 @@ export default class Projects extends Component {
             this.handleClick(i);
           }}
         >
-          <Pic style={{marginRight: 20 + "px"}} src={each.pictureUrl[0]} alt="Work example"></Pic>
-          <Pic src={each.pictureUrl[1]} alt="Work example"></Pic>          
+          <Pic
+            style={{ marginRight: 20 + "px" }}
+            src={each.pictureUrl[0]}
+            alt="Work example"
+          ></Pic>
+          <Pic src={each.pictureUrl[1]} alt="Work example"></Pic>
         </ProjectContainer>
       </ReactCardFlip>
     ));

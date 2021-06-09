@@ -22,18 +22,15 @@ class MainPage extends React.Component {
           <img class="pic" src={image} alt="Me"></img>
           <h1>About me</h1>
           <h3>
+            <p>I am a graduate of the class of 2021 at Ohio University.</p>
             <p>
-              Currently I am finishing my degree in Computer Science at Ohio University 
-              graduating in Spring 2021.
-            </p>
-            <p>
-              Here, I hope that I can provide a sense for who I am as a pre-professional,
-              as well as a potential employee by highlighting my experience in
-              the technology field. Please feel free to contact me with any
-              questions.
+              Here, I hope that I can provide a sense for who I am as a
+              professional, as well as a potential employee by highlighting my
+              experience in the technology field. Please feel free to contact me
+              with any questions.
             </p>
           </h3>
-          <h1>My assignments: </h1>
+          <h1>What I've done: </h1>
           <h3>Nationwide Application Developer Intern</h3>
           <h3>
             Ohio University Information Technologies Student Software Engineer
